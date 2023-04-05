@@ -7,6 +7,6 @@ export const Playlist = (url) => {
   const parsedUrl = queryString.parseUrl(url);
   const listId = parsedUrl.query.list;
   console.log(listId);
-  console.log(api_key)
+  console.log(`${api_key} Labh`)
 };
 
