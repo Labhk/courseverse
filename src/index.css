@@ -7,4 +7,10 @@
   margin:0;
   padding: 0;
   box-sizing:border-box ;
+
+  -webkit-text-size-adjust: none; /* Older versions of Safari */
+  text-size-adjust: 100%; /* Standard property */
+  -webkit-transform: scale(1); /* Older versions of Chrome and Edge */
+  transform: scale(1); /* Standard property */
+
 }

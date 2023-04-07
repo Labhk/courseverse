@@ -3,6 +3,9 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Header from './components/header'
 import Homebody from './components/homebody';
 import ImportPlaylist from './components/ImportPlaylist';
+import Explore from './components/Explore';
+import StartCourse from './components/StartCourse';
+import VideoPlayer from './components/VideoPlayer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +15,9 @@ function App() {
       <Routes>
         <Route path ="/" element = {<Homebody />}/>
         <Route path ="/import" element = {<ImportPlaylist />}/>
+        <Route path ="/explore" element = {<Explore />}/>
+        <Route path ="/start" element = {<StartCourse />}/>
+        <Route path ="/player" element = {<VideoPlayer />}/>
         
       </Routes>
     </BrowserRouter>
