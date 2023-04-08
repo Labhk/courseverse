@@ -6,6 +6,7 @@ import ImportPlaylist from './components/ImportPlaylist';
 import Explore from './components/Explore';
 import StartCourse from './components/StartCourse';
 import VideoPlayer from './components/VideoPlayer';
+import Login from './components/Auth/Login';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
         <Route path ="/explore" element = {<Explore />}/>
         <Route path ="/start" element = {<StartCourse />}/>
         <Route path ="/player" element = {<VideoPlayer />}/>
+        <Route path ="/login" element = {<Login />}/>
         
       </Routes>
     </BrowserRouter>

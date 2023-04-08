@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Explore from './Explore';
+import AskDoubt from './AskDoubt';
+import Header from './header';
 
 function VideoPlayer() {
   const [mainVideoId, setMainVideoId] = useState('');
   const [sidebarVideoIds, setSidebarVideoIds] = useState([]);
+  const titles = JSON.parse(sessionStorage.getItem('Titles'))
 
   useEffect(() => {
     const videoIds = JSON.parse(sessionStorage.getItem('VideoIds'));
@@ -19,43 +22,41 @@ function VideoPlayer() {
 
   return (
     <>
-        <div className='pb-20 pl-10'>
-        <div className='text-4xl font-bold text-center p-5'>
-        Video Player
+        <Header/>
+        
+        
+        <div className="flex flex-wrap p-2">
+  <div className="w-full md:w-8/12 p-8">
+    <iframe
+      width="100%"
+      height="400px"
+      src={`https://www.youtube.com/embed/${mainVideoId}`}
+      className='rounded-3xl'
+      title="YouTube video player"
+      samesite="none"
+    />
+  </div>
+  <div className="w-full md:w-4/12 flex flex-col p-3 mt-10 overflow-hidden" style={{height: "450px", overflowY: "scroll"}} >
+    {sidebarVideoIds.map((videoId) => (
+      <div
+        key={videoId}
+        className="flex p-2"
+        onClick={() => handleSideVideoClick(videoId)}
+      >
+        <img
+          src={`http://img.youtube.com/vi/${videoId}/1.jpg`}
+          className="w-fit rounded-xl"
+        />
+        <p className="text-sm ml-2 mt-auto mb-auto">{titles[sidebarVideoIds.indexOf(videoId)]}</p>
       </div>
-      <div className="flex flex-wrap">
-        <div className="flex-1">
-          <iframe
-            width="560"
-            height="315"
-            src={`https://www.youtube.com/embed/${mainVideoId}`}
-            title="YouTube video player"
-            samesite="none"
-          />
-        </div>
-        <div className="flex-1 flex flex-col">
-          {sidebarVideoIds.map((videoId) => (
-            <div
-              key={videoId}
-              className="cursor-pointer p-4 border mr-10"
-              onClick={() => handleSideVideoClick(videoId)}
-            >
-              <iframe
-                title="Sidebar Video"
-                width="50%"
-                height="300px"
-                src={`https://www.youtube.com/embed/${videoId}`}
-                className=" pointer-events-none"
-                samesite="none"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-      <Explore mainVideoId={mainVideoId} />
+    ))}
+  </div>
+</div>
 
-        </div>
-      
+
+      <Explore mainVideoId={mainVideoId} />
+        
+
     </>
   );
 }

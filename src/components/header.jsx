@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Login from '../components/Auth/Login';
 
 
 function Header() {
@@ -8,7 +9,7 @@ function Header() {
   return (
     <>  
         
-        <div className='shadow-md w-full fixed top-0 left-0'>
+        <div className='shadow-md w-full top-0 left-0 z-50'>
             <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
             <div className='font-medium text-2xl cursor-pointer flex items-centers text-gray-800'>
                 <span className='text-3xl text-indigo-600 mr-1 pt-2 '>
@@ -29,12 +30,7 @@ function Header() {
                 <li className='md:ml-8 text-xl md:my-0 my-7'><a href='0#' className='text-gray-800 hover:text-gray-400 duration-500 uppercase'><li>BLOGS</li></a></li>
                 <li className='md:ml-8 text-xl md:my-0 my-7'><a href='0#' className='text-gray-800 hover:text-gray-400 duration-500 uppercase'><li>CONTACT</li></a></li>
 
-                <button className=' bg-indigo-600 text-white font-medium py-2 px-6 rounded md:ml-8 hover:bg-indigo-400 duration-500 '>
-                    Login
-                </button>
-                <button className=' bg-indigo-600 text-white font-medium py-2 px-6 rounded md:ml-8 hover:bg-indigo-400 duration-500 '>
-                    Sign Up
-                </button>
+                <Login/>
             </ul>
             </div>
         </div>
