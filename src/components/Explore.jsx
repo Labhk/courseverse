@@ -36,7 +36,7 @@ function Explore({ mainVideoId }) {
 
   const handleQuiz = () => {
     setLoading(true);
-    const quizPromptValue = `provide a mcq quiz with five questions based on the text key values  ${JSON.stringify(transcript)} done`;
+    const quizPromptValue = `provide a mcq quiz with five questions based on the text key values  ${JSON.stringify(transcript)} give answers in end`;
     setQuizPrompt(quizPromptValue);
     axios
       .post("http://localhost:8080/chat", { prompt: quizPromptValue })
@@ -64,7 +64,7 @@ function Explore({ mainVideoId }) {
           {summary && !loading && (
             <div>
               <h2>Summary:</h2>
-              <p>{JSON.stringify(summary)}</p>
+              <p>{summary}</p>
             </div>
           )}
           <button className='border border-black' onClick={handleQuiz}>Generate Quiz</button>

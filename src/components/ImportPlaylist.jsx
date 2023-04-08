@@ -30,6 +30,8 @@ function ImportPlaylist() {
     if (playlistData && playlistData.items) {
       const videoIds = playlistData.items.map(item => item.contentDetails.videoId);
       sessionStorage.setItem('VideoIds', JSON.stringify(videoIds));
+      const titles = playlistData.items.map(item => item.snippet.title);
+      sessionStorage.setItem('Titles', JSON.stringify(titles));
       
       const firstVideo = playlistData.items[0];
         if (firstVideo.snippet.thumbnails && firstVideo.snippet.thumbnails.high) {
