@@ -328,7 +328,7 @@ const Homebody = () => {
 </div>
 
       </div>
-      <Footer />
+      
       
     </div>
     
