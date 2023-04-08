@@ -26,7 +26,6 @@ function Header() {
                 <li className='md:ml-8 text-xl md:my-0 my-7'><a href='0#' className='text-gray-800 hover:text-gray-400 duration-500 uppercase'><li>HOME</li></a></li>
                 <li className='md:ml-8 text-xl md:my-0 my-7'><a href='0#' className='text-gray-800 hover:text-gray-400 duration-500 uppercase'><li>BENEFITS</li></a></li>
                 <li className='md:ml-8 text-xl md:my-0 my-7'><a href='0#' className='text-gray-800 hover:text-gray-400 duration-500 uppercase'><li>TESTIMONIALS</li></a></li>
-                <li className='md:ml-8 text-xl md:my-0 my-7'><a href='0#' className='text-gray-800 hover:text-gray-400 duration-500 uppercase'><li>BLOGS</li></a></li>
                 <li className='md:ml-8 text-xl md:my-0 my-7'><a href='0#' className='text-gray-800 hover:text-gray-400 duration-500 uppercase'><li>CONTACT</li></a></li>
 
                 <button className=' bg-indigo-600 text-white font-medium py-2 px-6 rounded md:ml-8 hover:bg-indigo-400 duration-500 '>
