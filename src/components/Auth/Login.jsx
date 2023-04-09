@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import {auth,provider} from "./config";
 import { signInWithPopup } from '@firebase/auth';
+import { useNavigate } from 'react-router';
 
 function Login() {
 
   const [value,setValue] = useState('')
+  const navigate = useNavigate();
 
   const handleClick = () => {
       signInWithPopup(auth,provider).then((data) => {
@@ -16,6 +18,7 @@ function Login() {
   const logout = () => {
     localStorage.removeItem('email')
     setValue('')
+    navigate('/');
   }
 
   useEffect(() => {

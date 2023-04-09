@@ -116,9 +116,9 @@ function ImportPlaylist() {
               Popular Playlists
           </div>
             <p className='mt-3 text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
-            <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
-            <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
-            <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
+            <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=PypMN-yui4Y&....</p>
+            <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=Sv_NAxi_jNs&....</p>
+            <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=1PnVor36_40&....</p>
             <p className='mt-3 text-gray-600 pb-32'>Click to Copy</p>
           </div>
         </div>
