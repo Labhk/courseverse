@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
-import Header from './components/header'
 import Homebody from './components/homebody';
 import ImportPlaylist from './components/ImportPlaylist';
 import Explore from './components/Explore';
@@ -12,7 +11,8 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <BrowserRouter>
+    <div className='bg-gradient-to-r from-teal-200 to-lime-200'>
+      <BrowserRouter>
       <Routes>
         <Route path ="/" element = {<Homebody />}/>
         <Route path ="/import" element = {<ImportPlaylist />}/>
@@ -23,6 +23,9 @@ function App() {
         
       </Routes>
     </BrowserRouter>
+
+    </div>
+    
   )
 }
 

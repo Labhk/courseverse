@@ -24,7 +24,7 @@ function AskDoubt() {
         <div align="center">
           <form onSubmit={handleSubmit}>
             <div>
-              <label className="font-semibold text-2xl" htmlFor="inline-full-name">
+              <label className="font-thin text-3xl" htmlFor="inline-full-name">
                 Ask Your Doubt
               </label>
             </div>
@@ -34,12 +34,13 @@ function AskDoubt() {
                 value={prompt}
                 onChange={(e) => setPrompt(e.target.value)}
                 className=" text-lg text-center
-                border-b-2 border-blue-400
-                focus:outline-none focus:border-green-400 m-4 p-1"
+                border-b-2 border-gray-900
+                bg-transparent
+                focus:outline-none focus:border-blue-700 m-4 p-1"
               />
             </div>
             <div>
-              <button type="submit" className="m-3 border border-blue-500 text-blue-500 font-bold py-2 px-4 rounded-full  hover:bg-blue-700 hover:text-white ">
+              <button type="submit" className="m-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-gradient-to-r hover:from-cyan-800 hover:to-indigo-900 box-shadow hover:focus:shadow-none px-4 py-2 text-white rounded-full text-xl  ">
                 Ask Question
               </button>
             </div>

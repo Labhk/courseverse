@@ -20,13 +20,12 @@ function VideoPlayer() {
     const storedCourses = sessionStorage.getItem("Courses");
 
     if (storedCourses) {
-      // If `Courses` key exists in session storage, parse its value and update the last course's videoCount and Count
+      
       const courses = JSON.parse(storedCourses);
       const lastCourse = courses[courses.length - 1];
       lastCourse.videoCount += 1;
       lastCourse.Count += 1;
 
-      // Update the `Courses` key in session storage with the updated array
       sessionStorage.setItem("Courses", JSON.stringify(courses));
     }
     
@@ -39,7 +38,7 @@ function VideoPlayer() {
       <Header/>
       
       
-      <div className="flex flex-wrap p-2">
+      <div className="flex flex-wrap">
         <div className="w-full md:w-8/12 p-8 ">
           <iframe
             width="100%"
@@ -52,11 +51,11 @@ function VideoPlayer() {
           <Explore mainVideoId={mainVideoId} />
         </div>
         <div className='w-full md:w-4/12 flex flex-col'>
-        <div className=" p-3  mt-8 mr-3 overflow-hidden border border-gray-300 overflow-y-auto rounded-xl div-shadow" style={{height: "450px", overflowY: "scroll"}} >
+        <div className=" p-3  mt-8 mr-3 overflow-hidden overflow-y-auto rounded-xl div-shadow" style={{height: "450px", overflowY: "scroll"}} >
           {sidebarVideoIds.map((videoId) => (
             <div
               key={videoId}
-              className="flex p-2 cursor-pointer hover:bg-slate-200 rounded-xl"
+              className="flex p-2 cursor-pointer hover:bg-gray-800 hover:text-white rounded-xl"
               onClick={() => handleSideVideoClick(videoId)}
             >
               <img
@@ -68,7 +67,7 @@ function VideoPlayer() {
           ))}
           
         </div>
-        <div className='p-3 py-6 pt-10  mt-8 mr-3 border border-gray-300  rounded-xl div-shadow'>
+        <div className='p-3 py-6 pt-10  mt-8 mr-3 mb-10  rounded-xl div-shadow'>
             <AskDoubt/>
           </div>
         </div>

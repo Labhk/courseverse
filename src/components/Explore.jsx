@@ -77,7 +77,7 @@ function Explore({ mainVideoId }) {
     <>
       {showAssist && (
         <div className='text-3xl text-center p-5 '>
-          <button className='bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-400 hover:via-pink-500 hover:to-red-500 box-shadow text-white focus:text-4xl py-4 px-6 rounded-full' onClick={handleButtonClick}>AI Assist</button>
+          <button className='bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-gradient-to-r hover:from-cyan-700 hover:to-indigo-900 box-shadow hover:focus:shadow-none text-white focus:text-4xl py-4 px-6 rounded-full' onClick={handleButtonClick}>AI Assist</button>
         </div>
       )}
       
@@ -85,15 +85,15 @@ function Explore({ mainVideoId }) {
         <div className='pt-10 px-4'>
 
           <Tabs >
-            <TabList >
-            <Tab><span className='text-xl hover:text-blue-500'>Summary</span></Tab>
-            <Tab><span className='text-xl hover:text-blue-500'>Quiz</span></Tab>
+            <TabList style={{borderColor:"black",borderBottomWidth:"3px",borderRadius:"10px"}} >
+            <Tab style={{backgroundColor:"transparent",borderColor:"black",borderRadius:"10px",borderWidth:"3px"}}><span className='text-xl hover:text-blue-700' >Summary</span></Tab>
+            <Tab style={{backgroundColor:"transparent",borderColor:"black",borderRadius:"10px",borderWidth:"3px"}}><span className='text-xl hover:text-blue-700'>Quiz</span></Tab>
             </TabList>
 
             <TabPanel>
             <div className='flex justify-center items-center h-fit py-10 px-6'>
               {buttonVisible > 0 && (
-                <button className={`bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:from-indigo-500 hover:to-purple-500 text-white text-2xl  py-4 px-5 rounded-full focus:text-4xl box-shadow opacity-${buttonVisible}`} onClick={handleSummary}>Summarize Content</button>
+                <button className={`bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-gradient-to-r hover:from-cyan-700 hover:to-indigo-900 box-shadow hover:focus:shadow-none text-white text-2xl  py-5 px-5 rounded-full focus:text-4xl  opacity-${buttonVisible}`} onClick={handleSummary}>Summarize Content</button>
               )}
               {loading && 
                 <div className=''>
@@ -114,7 +114,7 @@ function Explore({ mainVideoId }) {
             <TabPanel>
             <div className='flex justify-center items-center h-fit py-10 px-6'>
               {buttonQuiz > 0 && (
-                <button className={`bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:from-indigo-500 hover:to-purple-500 text-white text-2xl  py-4 px-5 rounded-full focus:text-4xl box-shadow opacity-${buttonQuiz}`} onClick={handleQuiz}>Generate Quiz</button>
+                <button className={`bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-gradient-to-r hover:from-cyan-700 hover:to-indigo-900 box-shadow hover:focus:shadow-none text-white text-2xl  py-5 px-5 rounded-full focus:text-4xl  opacity-${buttonQuiz}`} onClick={handleQuiz}>Generate Quiz</button>
               )}
               {loading && 
                 <div className=''>

@@ -39,7 +39,6 @@ function ImportPlaylist() {
   }
 
   const handleExportClick = () => {
-    console.log(playlistData);
   
     if (playlistData && playlistData.items) {
       const videoIds = playlistData.items.map(item => item.contentDetails.videoId);
@@ -62,14 +61,15 @@ function ImportPlaylist() {
   return (
     <>
         <Header/>
+        <div className='h-screen'>
         <div className='flex flex-col justify-center items-center'>
-          <div className='text-3xl text-center p-5 pt-10'>
+          <div className='text-3xl font-sans font-thin text-center p-5 pt-10'>
             Enter Playlist & Create Course
           </div>
           <div className='p-3 w-1/2'>
             
             <input
-              className='text-2xl w-full rounded-full py-3 px-5 text-gray-400 leading-tight focus:outline-none focus:shadow-outline input-shadow '
+              className='text-xl w-full rounded-full focus:bg-transparent  py-3 px-5 text-gray-900 leading-tight focus:outline-none focus:shadow-outline input-shadow bg-transparent font-base placeholder-gray-900 '
               id='input-field'
               type='text'
               placeholder='Enter URL'
@@ -78,27 +78,27 @@ function ImportPlaylist() {
             />
           </div>
           <Link to='/start'>
-          <button className='bg-blue-500 hover:bg-blue-700 text-white text-2xl mt-4 py-2 px-4 rounded-full box-shadow focus:shadow-none' onClick={handleExportClick}>
+          <button className=' bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-gradient-to-r hover:from-cyan-800 hover:to-indigo-900 box-shadow hover:focus:shadow-none text-white text-2xl mt-4 py-2 px-4 rounded-full pb-3 ' onClick={handleExportClick}>
             Create Course
           </button>
           </Link>
         </div>
 
-        <div class="flex flex-wrap mt-10">
-          <div class="w-7/12 px-5 pl-10">
+        <div className="flex flex-wrap mt-10">
+          <div className="w-7/12 px-5 pl-10">
           {localStorage.getItem('email') && (
             <>
-            <div className="text-3xl font-medium text-gray-700">
-              Hello, Learner<span className='text-xl'>({localStorage.getItem('email')})</span>
+            <div className="text-3xl font-medium text-gray-900 mb-2">
+              Hello, Learner<span className='text-xl'> ({localStorage.getItem('email')})</span>
             </div>
-            <div className='flex flex-wrap p-5'>
+            <div className='flex flex-wrap py-5'>
             {!courses && <div className='italic text-3xl text-gray-500'>No Course Created</div>}
             {courses && courses.length > 0 && courses.map((video, index) => (
-              <Link to="/player" key={index} className='w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-2 mb-4'>
-                <div className='border p-4 rounded-xl card-shadow'>
+              <Link to="/player" key={index} className='w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4 mb-4'>
+                <div className=' p-4 rounded-xl card-shadow'>
                   <img src={video.thumbnail} alt={video.title} className='rounded-xl' />
                   <h3 className='text-sm leading-tight font-medium pt-2 h-24'>{video.title}</h3>
-                  <div className="h-2 w-4/3 bg-gray-200 rounded overflow-hidden ">
+                  <div className="h-2  bg-white rounded overflow-hidden ">
                     <div className="h-full bg-green-500" style={{ width:`${(video.Count / video.videoCount) * 100}%` }}></div>
                   </div>
                   <p className='font-mono font-semibold'>{Math.floor((video.Count / video.videoCount) * 100)}%</p>
@@ -111,17 +111,21 @@ function ImportPlaylist() {
             </>
           )}
           </div>
-          <div class="w-4/12 flex flex-col ml-20 mt-10 ">
-          <div className="text-3xl font-medium text-gray-700">
+          <div className="w-4/12 flex flex-col ml-20 mt-10 ">
+          <div className="text-3xl font-medium text-gray-900">
               Popular Playlists
           </div>
-            <p className='mt-3 text-blue-500 underline text-md hover:text-blue-300 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
-            <p className='text-blue-500 underline text-md hover:text-blue-300 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
-            <p className='text-blue-500 underline text-md hover:text-blue-300 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
-            <p className='text-blue-500 underline text-md hover:text-blue-300 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
-            <p className='mt-3 text-gray-500'>Click to Copy</p>
+            <p className='mt-3 text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
+            <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
+            <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
+            <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
+            <p className='mt-3 text-gray-600'>Click to Copy</p>
           </div>
         </div>
+
+
+        </div>
+        
         
       
     </>

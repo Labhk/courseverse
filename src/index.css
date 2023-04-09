@@ -7,6 +7,7 @@
   margin:0;
   padding: 0;
   box-sizing:border-box ;
+  
 
   -webkit-text-size-adjust: none; /* Older versions of Safari */
   text-size-adjust: 100%; /* Standard property */
@@ -15,46 +16,34 @@
 
 }
 
-/* Set the scrollbar width and make it rounded */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 3px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #d1d5db;
-  border-radius: 9999px;
+  border-radius: 100px;
 }
 ::-webkit-scrollbar-track {
-  background-color: #f3f4f6;
-  border-radius: 9999px;
+  border-radius: 100px;
 }
 
-/* Set the scrollbar width and make it rounded for Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #d1d5db #f3f4f6;
-}
-*:hover {
-  scrollbar-color: #a5acb0 #e5e7eb;
-}
+
+
 *::-webkit-scrollbar-thumb {
-  background-color: #d1d5db;
-  border-radius: 9999px;
+  background-color: #05002d;
+  border-radius: 100px;
 }
-*::-webkit-scrollbar-track {
-  background-color: #f3f4f6;
-  border-radius: 9999px;
-}
+
 
 .box-shadow{
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 5px 10px -1px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .input-shadow{
-  box-shadow: rgba(107, 102, 102, 0.12) 0px 2px 4px 0px, rgba(139, 139, 139, 0.32) 0px 2px 16px 0px inset;
+  box-shadow: inset -1px 2px 10px #000000;
 }
 
 .div-shadow{
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 4px 9px;
 }
 
 .side-shadow{
