@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
+import Login from '../components/Auth/Login';
 
 
-function Footer() 
-{
+function Footer() {
 
     let [open, setOpen] = useState(false);
 
-  return 
-  (
-    <>  
+  return (
+     
         
-       
+        
         <footer class="bg-neutral-900 text-center text-white">
           <div class="container px-6 pt-6">
             <div class="mb-6 flex justify-center">
@@ -124,8 +123,11 @@ function Footer()
             >
           </div>
         </footer>
+ 
+        
        
-    </>
+    
   )
 }
+
 export default Footer
