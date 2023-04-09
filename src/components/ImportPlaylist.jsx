@@ -91,7 +91,7 @@ function ImportPlaylist() {
             <div className="text-3xl font-medium text-gray-900 mb-2">
               Hello, Learner<span className='text-xl'> ({localStorage.getItem('email')})</span>
             </div>
-            <div className='flex flex-wrap py-5'>
+            <div className='flex flex-wrap py-5 pb-10'>
             {!courses && <div className='italic text-3xl text-gray-500'>No Course Created</div>}
             {courses && courses.length > 0 && courses.map((video, index) => (
               <Link to="/player" key={index} className='w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4 mb-4'>
@@ -119,7 +119,7 @@ function ImportPlaylist() {
             <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
             <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
             <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
-            <p className='mt-3 text-gray-600'>Click to Copy</p>
+            <p className='mt-3 text-gray-600 pb-32'>Click to Copy</p>
           </div>
         </div>
 
