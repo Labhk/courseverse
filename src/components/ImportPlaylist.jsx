@@ -61,7 +61,7 @@ function ImportPlaylist() {
   return (
     <>
         <Header/>
-        <div className='h-screen'>
+        <div className='h-full'>
         <div className='flex flex-col justify-center items-center'>
           <div className='text-3xl font-sans font-thin text-center p-5 pt-10'>
             Enter Playlist & Create Course

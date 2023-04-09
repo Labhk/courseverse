@@ -98,7 +98,7 @@ function Explore({ mainVideoId }) {
               {loading && 
                 <div className=''>
                   <p className='text-center text-xl font-mono'>Generating...</p>
-                  <img className="h-60 w-60 mr-50" src='images/fireworks.gif' alt='loading'/>
+                  <img className="h-72 w-96 mr-50" src='images/rat.gif' alt='loading'/>
                 </div>
               }
               {summary && !loading && (
@@ -119,7 +119,7 @@ function Explore({ mainVideoId }) {
               {loading && 
                 <div className=''>
                   <p className='text-center text-xl font-mono'>Generating...</p>
-                  <img className="h-60 w-60 mr-50" src='images/fireworks.gif' alt='loading'/>
+                  <img className="h-72 w-90 mr-50" src='images/rat.gif' alt='loading'/>
                 </div>
               }
               {quiz && !loading && (
