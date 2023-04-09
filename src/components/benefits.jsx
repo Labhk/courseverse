@@ -6,7 +6,7 @@ const Benefits = () => {
             <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5">
 
                 <div class="rounded overflow-hidden shadow-lg border-2 hover:shadow-2xl">
-                    <img class="w-full" src="public\images\foucessed_1.jpg" alt="Mountain" />
+                    <img class="w-full" src="images/foucessed_1.jpg" alt="Mountain" />
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Distraction-free learning</div>
                         <p class="text-gray-700 text-base text-justify">
@@ -17,7 +17,7 @@ const Benefits = () => {
                 </div>
 
                 <div class="rounded overflow-hidden shadow-lg border-2 hover:shadow-2xl">
-                    <img class="w-full" src="public\images\ai.jpg" alt="River" />
+                    <img class="w-full" src="images/ai.jpg" alt="River" />
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Automated summaries</div>
                         <p class="text-gray-700 text-base text-justify">
@@ -31,7 +31,7 @@ const Benefits = () => {
 
 
                 <div class="rounded overflow-hidden shadow-lg border-2 hover:shadow-2xl ">
-                    <img class="w-full" src="public\images\quiz.jpg" alt="Forest" />
+                    <img class="w-full" src="images/quiz.jpg" alt="Forest" />
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Interactive quizzes</div>
                         <p class="text-gray-700 text-base text-justify">
@@ -44,7 +44,7 @@ const Benefits = () => {
                 </div>
 
                 <div class="rounded overflow-hidden shadow-lg border-2 hover:shadow-2xl">
-                    <img class="w-full" src="public\images\doubtsolving.jpg" alt="Doubt Solving" />
+                    <img class="w-full" src="images/doubtsolving.jpg" alt="Doubt Solving" />
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Live doubt solving</div>
                         <p class="text-gray-700 text-base text-justify">
