@@ -34,8 +34,8 @@ function StartCourse() {
             <div className='text-3xl font-base underline ml-10 mt-5 mb-5'>
             {title}
             </div>
-            <div className='h-screen flex ml-32 '>
-                <div className='p-5 block'>
+            <div className='h-screen flex ml-20 '>
+                <div className='p-5 block w-1/2'>
                     <img className='h-96 w-full rounded-2xl' src={thumbnail} alt='thumbnail'/>
                 </div>
                 <div className='pt-12 pl-36 flex flex-col '>
@@ -53,7 +53,7 @@ function StartCourse() {
                     </div>
                     <div className='py-5'>
                     <Link to='/player'>
-                    <button className=' bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-gradient-to-r hover:from-cyan-700 hover:to-indigo-900 box-shadow hover:focus:shadow-none rounded-full text-white text-2xl py-4 px-6' onClick={handleStartCourseClick}>
+                    <button className=' bg-gradient-to-r from-bele2 to-bele1 hover:bg-gradient-to-r hover:from-cyan-800 hover:to-indigo-900 hover:text-btext  box-shadow hover:focus:shadow-none text-white text-2xl mt-4 py-2 px-4 rounded-full pb-3 ' onClick={handleStartCourseClick}>
                         Start Course
                         </button>
                     

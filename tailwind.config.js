@@ -17,6 +17,7 @@ module.exports = {
       'bele1': '#19A7CE',
       'bele2': '#146C94',
       'white': '#FFFFFF',
+      'green':'#50C878'
     },
     extend: {
 

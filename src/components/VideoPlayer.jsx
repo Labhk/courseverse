@@ -55,14 +55,14 @@ function VideoPlayer() {
           {sidebarVideoIds.map((videoId) => (
             <div
               key={videoId}
-              className="flex p-2 cursor-pointer hover:bg-gray-800 hover:text-white rounded-xl"
+              className="flex p-2 cursor-pointer hover:bg-btext text-white rounded-xl"
               onClick={() => handleSideVideoClick(videoId)}
             >
               <img
                 src={`http://img.youtube.com/vi/${videoId}/0.jpg`}
                 className="w-36 rounded-xl"
               />
-              <p className="text-sm ml-2 mt-auto mb-auto font-medium">{titles[sidebarVideoIds.indexOf(videoId)]}</p>
+              <p className="text-md ml-2 mt-auto mb-auto font-normal">{titles[sidebarVideoIds.indexOf(videoId)]}</p>
             </div>
           ))}
           

@@ -78,7 +78,7 @@ function ImportPlaylist() {
             />
           </div>
           <Link to='/start'>
-          <button className=' g-gradient-to-r from-bele2 to-bele1 hover:bg-gradient-to-r hover:from-cyan-800 hover:to-indigo-900 box-shadow hover:focus:shadow-none text-white text-2xl mt-4 py-2 px-4 rounded-full pb-3 ' onClick={handleExportClick}>
+          <button className=' bg-gradient-to-r from-bele2 to-bele1 hover:bg-gradient-to-r hover:from-cyan-800 hover:to-indigo-900 hover:text-btext  box-shadow hover:focus:shadow-none text-white text-2xl mt-4 py-2 px-4 rounded-full pb-3 ' onClick={handleExportClick}>
             Create Course
           </button>
           </Link>
@@ -94,12 +94,12 @@ function ImportPlaylist() {
             <div className='flex flex-wrap py-5 pb-10'>
             {!courses && <div className='italic text-3xl text-gray-500'>No Course Created</div>}
             {courses && courses.length > 0 && courses.map((video, index) => (
-              <Link to="/player" key={index} className='w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4 mb-4'>
-                <div className=' p-4 rounded-xl card-shadow'>
+              <Link to="/player" key={index} className='w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4 mb-4 '>
+                <div className=' p-4 rounded-xl card-shadow bg-gradient-to-r from-bele2 to-bele1 '>
                   <img src={video.thumbnail} alt={video.title} className='rounded-xl' />
-                  <h3 className='text-sm leading-tight font-medium pt-2 h-24'>{video.title}</h3>
+                  <h3 className='text-md leading-tight text-white font-medium pt-2 h-24 hover:text-btext'>{video.title}</h3>
                   <div className="h-2  bg-white rounded overflow-hidden ">
-                    <div className="h-full bg-green-500" style={{ width:`${(video.Count / video.videoCount) * 100}%` }}></div>
+                    <div className="h-full bg-green" style={{ width:`${(video.Count / video.videoCount) * 100}%` }}></div>
                   </div>
                   <p className='font-mono font-semibold'>{Math.floor((video.Count / video.videoCount) * 100)}%</p>
                 </div>
@@ -111,15 +111,15 @@ function ImportPlaylist() {
             </>
           )}
           </div>
-          <div className="w-4/12 flex flex-col ml-20 mt-10 ">
-          <div className="text-3xl font-medium text-gray-900">
+          <div className="w-4/12 flex flex-col ml-20 mt-10 pb-24">
+          <div className="text-3xl font-medium ">
               Popular Playlists
           </div>
-            <p className='mt-3 text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
-            <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=PypMN-yui4Y&....</p>
-            <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=Sv_NAxi_jNs&....</p>
-            <p className='text-blue-700 underline text-md hover:text-blue-500 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=1PnVor36_40&....</p>
-            <p className='mt-3 text-gray-600 pb-32'>Click to Copy</p>
+            <p className='mt-3 text-blue-700 underline text-md hover:text-bele1 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=HfTXHrWMGVY&....</p>
+            <p className='text-blue-700 underline text-md hover:text-bele1 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=PypMN-yui4Y&....</p>
+            <p className='text-blue-700 underline text-md hover:text-bele1 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=Sv_NAxi_jNs&....</p>
+            <p className='text-blue-700 underline text-md hover:text-bele1 cursor-pointer' onClick={handleCopy} >https://www.youtube.com/watch?v=1PnVor36_40&....</p>
+            
           </div>
         </div>
 
