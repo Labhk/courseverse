@@ -14,9 +14,9 @@ function Header() {
         <div className='shadow-md w-full top-0 left-0 z-50  right-0 bg-gradient-to-r from-bele2 to-bele1'>
             <div className='md:flex items-center justify-between py-4 md:px-10 px-7'>
             <Link to='/'>
-            <div className='font-medium text-2xl cursor-pointer flex items-centers text-gray-800'>
+            <div className='font-medium text-2xl cursor-pointer flex items-center text-gray-800 '>
                 <span className='text-3xl text-indigo-600 mr-1 pt-2 '>
-                <img className="h-10 w-10" src='images/augmented-reality.png' />
+                <img className="h-14 w-14" src='images/2.png' />
                 </span>
                 <span className='pt-3 text-white'>CourseVerse</span>
                 

@@ -77,7 +77,7 @@ function Explore({ mainVideoId }) {
     <>
       {showAssist && (
         <div className='text-3xl text-center p-5 '>
-          <button className='bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-gradient-to-r hover:from-cyan-700 hover:to-indigo-900 box-shadow hover:focus:shadow-none text-white focus:text-4xl py-4 px-6 rounded-full' onClick={handleButtonClick}>AI Assist</button>
+          <button className='bg-gradient-to-r from-bele2 to-bele1 hover:bg-gradient-to-r hover:from-cyan-700 hover:to-indigo-900 box-shadow hover:focus:shadow-none text-white focus:text-2xl py-4 px-6 rounded-full' onClick={handleButtonClick}>AI Assist</button>
         </div>
       )}
       

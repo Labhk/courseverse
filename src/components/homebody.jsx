@@ -8,9 +8,9 @@ const Homebody = () => {
       <Header />
 
       <div className="h-screen w-full flex">
-        <div className="w-1/2  p-14 mt-8">
+        <div className="w-1/2  p-14 mt-4">
 
-          <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Your One-Stop Learning Solution.</h1>
+          <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl  text-transparent  bg-clip-text bg-gradient-to-r from-bele2 to-bele1">Your One-Stop Learning Solution.</h1>
           <p className="mb-6 text-lg font-normal text-gray-700 lg:text-xl dark:text-gray-400 text-justify">Welcome to CourseVerse, the platform that lets you learn anything with ease. Whether you want to improve your web development skills, cook like a chef, or learn a new language, we've got you covered. Our distraction-free environment lets you import any playlist and watch it without interruptions, so you can learn more efficiently and effectively. Sign up now to discover a new world of learning and unleash your full potential!.</p>
           <Link to="/import">
             <button className="bg-gradient-to-r from-bele2 to-bele1 hover:bg-gradient-to-r hover:from-cyan-800 hover:to-indigo-900 box-shadow hover:focus:shadow-none text-xl font-medium text-white py-3 px-5 rounded-full">Get Started</button>
@@ -19,8 +19,8 @@ const Homebody = () => {
 
         </div>
 
-        <div className=" w-1/2 p-20 mt-8 ">
-          <img className="  " src='images/big.png' />
+        <div className=" w-1/2 px-12 py-16 mt-1 ">
+          <img className="  " src='images/home1.png' />
         </div>
 
       </div>
@@ -224,9 +224,9 @@ const Homebody = () => {
         <div className="container my-24 px-6 mx-auto">
 
 
-          <section className="mb-32 text-center text-gray-900">
-            <div className="max-w-[500px] mx-auto px-3 lg:px-6  p-8 shadow-lg  hover:shadow-2xl">
-              <h2 className="text-3xl font-bold mb-12">Contact us</h2>
+          <section className="mb-32 text-center text-gray-900 ">
+            <div className="max-w-[500px] mx-auto px-3 lg:px-6  p-8 shadow-lg  hover:shadow-2xl bg-gradient-to-r from-bele2 to-bele1 rounded-3xl">
+              <h2 className="text-3xl font-bold mb-12 text-white">Contact us</h2>
               <div >
                 <div className="form-group mb-6">
                   <input type="text" className="form-control block
@@ -242,7 +242,7 @@ const Homebody = () => {
             transition
             ease-in-out
             m-0
-            focus:text-gray-700 focus:border-blue-600 focus:outline-none" id="exampleInput7"
+            focus:text-gray-700 focus:border-blue-600 focus:outline-none  bg-white text-bbg" id="exampleInput7" 
                     placeholder="Name" />
                 </div>
                 <div className="form-group mb-6">
@@ -305,7 +305,7 @@ const Homebody = () => {
           active:bg-blue-800 active:shadow-lg
           transition
           duration-150
-          ease-in-out">Send</button>
+          ease-in-out bg-bbg  ">Send</button>
               </div>
             </div>
           </section>

@@ -51,7 +51,7 @@ function VideoPlayer() {
           <Explore mainVideoId={mainVideoId} />
         </div>
         <div className='w-full md:w-4/12 flex flex-col'>
-        <div className=" p-3  mt-8 mr-3 overflow-hidden overflow-y-auto rounded-xl div-shadow" style={{height: "450px", overflowY: "scroll"}} >
+        <div className=" p-3  mt-8 mr-3 overflow-hidden overflow-y-auto rounded-xl div-shadow bg-gradient-to-r from-bele2 to-bele1" style={{height: "450px", overflowY: "scroll"}} >
           {sidebarVideoIds.map((videoId) => (
             <div
               key={videoId}
@@ -67,7 +67,7 @@ function VideoPlayer() {
           ))}
           
         </div>
-        <div className='p-3 py-6 pt-10  mt-8 mr-3 mb-10  rounded-xl div-shadow'>
+        <div className='p-3 py-6 pt-10  mt-8 mr-3 mb-10  rounded-xl div-shadow bg-gradient-to-r from-bele2 to-bele1 text-bbg'>
             <AskDoubt/>
           </div>
         </div>
