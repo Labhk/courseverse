@@ -5,7 +5,22 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'ebg': '#FFF4E0',
+      'etext': '#4D4D4D',
+      'eele1': '#B46060',
+      'eele2': '#FFBF9B',
+      'bbg': '#F6F1F1',
+      'btext': '#000000',
+      'bele1': '#19A7CE',
+      'bele2': '#146C94',
+      'white': '#FFFFFF',
+    },
+    extend: {
+
+    },
   },
   plugins: [],
 }

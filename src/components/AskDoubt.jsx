@@ -21,7 +21,7 @@ function AskDoubt() {
 
     return (
       <>
-        <div align="center">
+        <div align="center ">
           <form onSubmit={handleSubmit}>
             <div>
               <label className="font-thin text-3xl" htmlFor="inline-full-name">
@@ -36,7 +36,7 @@ function AskDoubt() {
                 className=" text-lg text-center
                 border-b-2 border-gray-900
                 bg-transparent
-                focus:outline-none focus:border-blue-700 m-4 p-1"
+                focus:outline-none focus:border-blue-700 m-4 p-1 "
               />
             </div>
             <div>
