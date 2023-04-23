@@ -19,7 +19,7 @@ const Homebody = () => {
 
         </div>
 
-        <div className=" w-1/2 px-12 py-16 mt-1 ">
+        <div className=" w-1/2 ml-10 py-16 mt-1 ">
           <img className="  " src='images/home1.png' />
         </div>
 
@@ -29,14 +29,14 @@ const Homebody = () => {
       <div className="h-screen w-full flex">
 
 
-        <div className="container my-14 px-6 mx-auto">
+        <div className="container my-14 px-6 mx-auto bg-gradient-to-r from-bele2 to-bele1">
 
-          <section className="mb-32 text-gray-800 text-center">
+          <section className="mb-32 text-gray-800 text-center ">
 
-            <h2 className="text-3xl font-bold mb-12">Testimonials</h2>
+            <h2 className=" text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl  text-white mt-8 mb-16">Testimonials</h2>
 
             <div className="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
-              <div className="mb-12 md:mb-0">
+              <div className="mb-12 md:mb-0 overflow-hidden shadow-lg  hover:shadow-2xl bg-white rounded-3xl px-4 py-8">
                 <div className="flex justify-center mb-6">
                   <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" className="rounded-full shadow-lg w-32" />
                 </div>
@@ -95,8 +95,8 @@ const Homebody = () => {
                   </li>
                 </ul>
               </div>
-              <div className="mb-12 md:mb-0">
-                <div className="flex justify-center mb-6">
+              <div className="mb-12 md:mb-0 overflow-hidden shadow-lg  hover:shadow-2xl bg-white rounded-3xl px-4 py-8">
+                <div className="flex justify-center mb-6 ">
                   <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg" className="rounded-full shadow-lg w-32" />
                 </div>
                 <h5 className="text-lg font-bold mb-4">Lisa Cudrow</h5>
@@ -153,7 +153,7 @@ const Homebody = () => {
                   </li>
                 </ul>
               </div>
-              <div className="mb-0">
+              <div className="mb-0 overflow-hidden shadow-lg  hover:shadow-2xl bg-white rounded-3xl px-4 py-8">
                 <div className="flex justify-center mb-6">
                   <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" className="rounded-full shadow-lg w-32" />
                 </div>
@@ -259,7 +259,7 @@ const Homebody = () => {
             transition
             ease-in-out
             m-0
-            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none bg-white text-bbg" id="exampleInput8"
                     placeholder="Email address" />
                 </div>
                 <div className="form-group mb-6">
@@ -278,7 +278,7 @@ const Homebody = () => {
             transition
             ease-in-out
             m-0
-            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none resize-none bg-white text-bbg
           " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
                 </div>
                 <div className="form-group form-check text-center mb-6">
@@ -293,7 +293,7 @@ const Homebody = () => {
           px-6
           py-2.5
           bg-blue-600
-          text-white
+          
           font-medium
           text-xs
           leading-tight
@@ -305,7 +305,7 @@ const Homebody = () => {
           active:bg-blue-800 active:shadow-lg
           transition
           duration-150
-          ease-in-out bg-bbg  ">Send</button>
+          ease-in-out bg-bbg text-bele2 ">Send</button>
               </div>
             </div>
           </section>
