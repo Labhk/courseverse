@@ -8,12 +8,12 @@ const Homebody = () => {
       <Header />
 
       <div className="h-screen w-full flex">
-        <div className="w-1/2  p-14 mt-4">
+        <div className="w-1/2  p-14 mt-8">
 
           <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Your One-Stop Learning Solution.</h1>
-          <p className="mb-6 text-lg font-normal text-gray-700 lg:text-xl dark:text-gray-400">Welcome to CourseVerse, the platform that lets you learn anything with ease. Whether you want to improve your web development skills, cook like a chef, or learn a new language, we've got you covered. Our distraction-free environment lets you import any playlist and watch it without interruptions, so you can learn more efficiently and effectively. Sign up now to discover a new world of learning and unleash your full potential!.</p>
+          <p className="mb-6 text-lg font-normal text-gray-700 lg:text-xl dark:text-gray-400 text-justify">Welcome to CourseVerse, the platform that lets you learn anything with ease. Whether you want to improve your web development skills, cook like a chef, or learn a new language, we've got you covered. Our distraction-free environment lets you import any playlist and watch it without interruptions, so you can learn more efficiently and effectively. Sign up now to discover a new world of learning and unleash your full potential!.</p>
           <Link to="/import">
-            <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-gradient-to-r hover:from-cyan-800 hover:to-indigo-900 box-shadow hover:focus:shadow-none text-xl font-medium text-white py-3 px-5 rounded-full">Get Started</button>
+            <button className="bg-gradient-to-r from-bele2 to-bele1 hover:bg-gradient-to-r hover:from-cyan-800 hover:to-indigo-900 box-shadow hover:focus:shadow-none text-xl font-medium text-white py-3 px-5 rounded-full">Get Started</button>
           </Link>
 
 
